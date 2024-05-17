@@ -1,0 +1,78 @@
+steps:
+  NATION-1855a50f-8c14-4659-bece-e189fbcc34ac:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 90470b61-0eef-4a4b-bc5d-b59443b19093
+              stepCounter: 1855a50f-8c14-4659-bece-e189fbcc34ac
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_NATIONKEY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e72e7152-c47e-4fd1-ad1a-994bcc8c0586
+              stepCounter: 1855a50f-8c14-4659-bece-e189fbcc34ac
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: N_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6c27c551-79ab-4c33-952f-20f44b4feabc
+              stepCounter: 1855a50f-8c14-4659-bece-e189fbcc34ac
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_REGIONKEY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: fa20602a-b5b4-41c7-91a8-d7cf947e11ff
+              stepCounter: 1855a50f-8c14-4659-bece-e189fbcc34ac
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: N_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'NATION') }}
+      name: NATION
+      schema: ""
+      sqlType: Source
+      table: NATION
+      type: sourceInput
+    stepCounter: 1855a50f-8c14-4659-bece-e189fbcc34ac
